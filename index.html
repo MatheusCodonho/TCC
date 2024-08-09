@@ -2,11 +2,69 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TCC</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>TESTANDO...</h1>
+    <img src="img/rda logo.png" alt="Logo">
+    <br><br>
+    <section>
+        <div class="caixa">
+            <!-- Caixa de texto 1 -->
+            <img src="img/icone remove.png" alt="Imagem 3x4">
+            <label for="caixa1">Nome do aluno:</label>
+            <input type="text" id="caixa1" oninput="copiarTexto()">
+        
+            <!-- Caixa de texto 2 -->
+            <label for="caixa3">Data de Nascimento:</label>
+            <input type="date" id="caixa3" oninput="copiarTexto()">
+         
+            <!-- Caixa de texto 3 -->
+            <label for="caixa5">Nº de RG:</label>
+            <input type="text" id="caixa5" oninput="copiarTexto()">
     
+            <!-- Caixa de texto 4 -->
+            <label for="caixa7">Curso:</label>
+            <input type="text" id="caixa7" oninput="copiarTexto()">
+            
+            <div class="wrapper">
+                <div class="form">
+                    <label for="matricula">Nº da Matricula:</label>
+                    <input type="text" id="matricula">
+                    <br><br>
+                    <button id="generate-qr">Gerar Qr Code</button>
+                </div>
+            </div> 
+        </div>
+    
+        <div class="caixa2">
+            <img src="img/icone remove.png" alt="Imagem 3x4">
+            <img src="img/senai logo.png" alt="Logo">
+            <p>Instituição Nami Jafet</p>
+            <hr>
+            <label for="caixa2">Nome do aluno:</label>
+            <input type="text" id="caixa2" readonly placeholder="Nome do aluno">
+            <br>
+    
+            <label for="caixa4">Data de Nascimento:</label>
+            <input type="text" id="caixa4" readonly placeholder="Data de Nascimento">
+           <br>
+    
+           <label for="caixa6">Nº de RG:</label>
+            <input type="text" id="caixa6" readonly placeholder="Nº de RG:">
+            <br>
+    
+            <label for="caixa8">Curso:</label>
+            <input type="text" id="caixa8" readonly placeholder="Curso:">
+            <br><br>
+            <div class="qr-code">
+                <img src="" alt="qrcode" class="img">
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sincronização de Caixas de Texto</title>
+    <script>
+        // Função para copiar o valor da primeira caixa de texto para a segunda
+        function copiarTexto() {
+            // Obter o valor da primeira caixa de texto
+            var texto = document.getElementById('caixa1').value;
+            // Definir o valor da segunda caixa de texto
+            document.getElementById('caixa2').value = texto;
+        }
+    </script>
+</head>
+<body>
+    <h1>Sincronização de Caixas de Texto</h1>
+    
+    <!-- Caixa de texto 1 -->
+    <label for="caixa1">Caixa 1:</label>
+    <input type="text" id="caixa1" oninput="copiarTexto()">
+    
+    <!-- Caixa de texto 2 -->
+    <label for="caixa2">Caixa 2:</label>
+    <input type="text" id="caixa2" readonly>
+    
+</body>
+</html>

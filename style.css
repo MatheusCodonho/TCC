@@ -1,0 +1,141 @@
+
+/* Reset básico de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para a imagem do logo */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a seção geral */
+section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Estilo para a primeira caixa */
+.caixa {
+    width: 60%;
+    max-width: 600px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.caixa label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.caixa input[type="text"], .caixa input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.caixa input[type="text"]:last-of-type, .caixa input[type="date"]:last-of-type {
+    margin-bottom: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form {
+    width: 70%;
+}
+
+.qr-code {
+    width: 30%;
+    text-align: center;
+}
+
+.qr-code img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para a segunda caixa que ficará no lado direito */
+.caixa2 {
+    
+    width: 250px; /* Largura da caixa */
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh; /* Faz com que a caixa ocupe toda a altura da tela */
+    overflow-y: auto; /* Adiciona rolagem se o conteúdo for maior que a altura da tela */
+}
+
+/* Estilo para a imagem na caixa2 */
+.caixa2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.caixa2 p {
+    margin: 10px 0;
+}
+
+.caixa2 hr {
+    margin: 10px 0;
+}
+
+.caixa2 label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.caixa2 input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.caixa2 input[type="text"]:last-of-type {
+    margin-bottom: 0;
+}
+
