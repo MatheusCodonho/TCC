@@ -13,7 +13,8 @@
     <section>
         <div class="caixa">
             <!-- Caixa de texto 1 -->
-            <img src="img/icone remove.png" alt="Imagem 3x4">
+            <input type="file" id="imagem" accept="image/*">
+            <div id="imagem-container"></div>
             <label for="caixa1">Nome do aluno:</label>
             <input type="text" id="caixa1" oninput="copiarTexto()">
         
@@ -32,7 +33,7 @@
             <div class="wrapper">
                 <div class="form">
                     <label for="matricula">Nº da Matricula:</label>
-                    <input type="text" id="matricula">
+                    <input type="text" id="matricula" oninput="copiarTexto()">
                     <br><br>
                     <button id="generate-qr">Gerar Qr Code</button>
                 </div>
@@ -40,8 +41,8 @@
         </div>
     
         <div class="caixa2">
-            <img src="img/icone remove.png" alt="Imagem 3x4">
-            <img src="img/senai logo.png" alt="Logo">
+            <img id="caixa2-img" alt="Imagem do aluno">
+            <img id="logo" src="img/senai logo.png" alt="Logo">
             <p>Instituição Nami Jafet</p>
             <hr>
             <label for="caixa2">Nome do aluno:</label>
@@ -58,6 +59,10 @@
     
             <label for="caixa8">Curso:</label>
             <input type="text" id="caixa8" readonly placeholder="Curso:">
+            <br>
+            
+            <label for="matricula">Nº da Matricula:</label>
+            <input type="text" id="matricula1" readonly placeholder="Nº da Matricula::">
             <br><br>
             <div class="qr-code">
                 <img src="" alt="qrcode" class="img">
